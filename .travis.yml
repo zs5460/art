@@ -7,9 +7,9 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 
 before_deploy:
-  - GOARCH=amd64 GOOS=linux   go build -o art-linux
-  - GOARCH=amd64 GOOS=darwin  go build -o art-darwin
-  - GOARCH=amd64 GOOS=windows go build -o art-windows.exe
+  - GOARCH=amd64 GOOS=linux   go build -o art-linux cmd/art/main.go
+  - GOARCH=amd64 GOOS=darwin  go build -o art-darwin cmd/art/main.go
+  - GOARCH=amd64 GOOS=windows go build -o art-windows.exe cmd/art/main.go
 
 deploy:
   provider: releases
