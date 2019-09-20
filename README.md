@@ -11,6 +11,28 @@
 go get -u github.com/zs5460/art
 ```
 
+## Usage
+
+```go
+package main
+
+import "github.com/zs5460/art"
+
+func main(){
+    art.Print("zs5460")
+}
+```
+
+```shell
+               ______ __ __   _____  ____ 
+ ____   _____ / ____// // /  / ___/ / __ \
+/_  /  / ___//___ \ / // /_ / __ \ / / / /
+ / /_ (__  )____/ //__  __// /_/ // /_/ / 
+/___//____//_____/   /_/   \____/ \____/  
+                                         
+```
+
+
 ## License
 
 Released under MIT license, see [LICENSE](LICENSE) for details.
