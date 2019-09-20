@@ -5,6 +5,8 @@
 [![codecov](https://codecov.io/gh/zs5460/art/branch/master/graph/badge.svg)](https://codecov.io/gh/zs5460/art)
 [![GoDoc](https://godoc.org/github.com/zs5460/art?status.svg)](https://godoc.org/github.com/zs5460/art)
 
+ART is a golang lib for text converting to ASCII art fancy.
+
 ## Install
 
 ```shell
