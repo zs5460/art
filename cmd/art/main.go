@@ -9,7 +9,7 @@ import (
 var s string
 
 func main() {
-	flag.StringVar(&s,"text","art - zs5460","")
+	flag.StringVar(&s, "text", "art - zs5460", "")
 	flag.Parse()
 	art.Print(s)
 }

@@ -51,7 +51,7 @@ func fuse(left, right []string) []string {
 			rc := right[j][i-1 : i]
 			if lc == " " {
 				cc += rc
-			}else{
+			} else {
 				cc += lc
 			}
 		}
