@@ -33,7 +33,8 @@ func min(a, b int) int {
 
 func fuse(left, right []string) []string {
 	var step []int
-	c := min(len(left[0]), len(right[0]))
+	var c int
+	c = min(len(left[0]), len(right[0]))
 	for j := 0; j < 6; j++ {
 		k := len(left[j]) + len(right[j]) -
 			len(strings.TrimRight(left[j], " ")) -
