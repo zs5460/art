@@ -21,7 +21,7 @@ package main
 import "github.com/zs5460/art"
 
 func main(){
-    art.Print("zs5460")
+    print(art.String("zs5460"))
 }
 ```
 
@@ -33,7 +33,6 @@ func main(){
 /___//____//_____/   /_/   \____/ \____/  
                                          
 ```
-
 
 ## License
 
