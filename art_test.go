@@ -21,6 +21,12 @@ func TestString(t *testing.T) {
  / /_ (__  ) 
 /___//____/  
              `},
+		{name: "sign", args: args{text: "+_"}, want: `          
+    __    
+ __/ /_   
+/_  __/   
+ /_/______
+   /_____/`},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

@@ -24,17 +24,9 @@ func Print(text string) {
 	fmt.Println(String(text))
 }
 
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
 func fuse(left, right []string) []string {
 	var step []int
-	var c int
-	c = min(len(left[0]), len(right[0]))
+
 	for j := 0; j < 6; j++ {
 		k := len(left[j]) + len(right[j]) -
 			len(strings.TrimRight(left[j], " ")) -
@@ -43,8 +35,7 @@ func fuse(left, right []string) []string {
 	}
 
 	sort.Ints(step)
-	c = step[0]
-
+	c := step[0]
 	for j := 0; j < 6; j++ {
 		cc := ""
 		for i := 1; i <= c; i++ {
