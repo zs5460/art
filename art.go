@@ -1,7 +1,6 @@
 package art
 
 import (
-	"fmt"
 	"sort"
 	"strings"
 )
@@ -17,11 +16,6 @@ func String(text string) string {
 		s = fuse(s, getArt(chars[i]))
 	}
 	return strings.Replace(strings.Join(s, "\n"), "$", " ", -1)
-}
-
-// Print prints the art string
-func Print(text string) {
-	fmt.Println(String(text))
 }
 
 func fuse(left, right []string) []string {
