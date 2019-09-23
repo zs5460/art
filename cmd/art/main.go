@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/zs5460/art"
+	"github.com/wonx2/art"
 )
 
 var s string
