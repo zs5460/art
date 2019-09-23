@@ -15,6 +15,7 @@ func String(text string) string {
 	for i := 1; i < len(chars); i++ {
 		s = fuse(s, getArt(chars[i]))
 	}
+
 	return strings.Replace(strings.Join(s, "\n"), "$", " ", -1)
 }
 

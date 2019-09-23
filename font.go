@@ -1,12 +1,7 @@
 package art
 
-//Font ...
-type Font map[byte][]string
-
-var font Font
-
-func init() {
-	font = make(Font, 100)
+func getArt(char byte) []string {
+	font := make(map[byte][]string, 100)
 	font[32] = []string{
 		"     $$",
 		"    $$ ",
@@ -768,11 +763,8 @@ func init() {
 		"      ",
 	}
 
-}
-
-func getArt(char byte) []string {
 	if v, ok := font[char]; ok {
 		return v
 	}
-	return []string{" ", " ", " ", " ", " ", " "}
+	return font[32]
 }
