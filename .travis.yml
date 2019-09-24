@@ -14,7 +14,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key: "${GH_TOKEN}"
-  file: 
+  file:
     - art-linux
     - art-darwin
     - art-windows.exe
